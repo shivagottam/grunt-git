@@ -1,0 +1,9 @@
+tasks:
+  build-deps:
+    runner: node:10
+    steps:
+    - checkout
+    - run: npm install               
+    - run: npm install -g grunt-cli
+    - run: grunt --version
+    - run: npm run build 
